@@ -1,0 +1,71 @@
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+//- jQuery
+- scripts.add(["//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"])
+
+//- Other Scripts
+- scripts.add(["/vendor/modernizr.js","/vendor/log.js"])
+
+//- User
+- styles.add(["/styles/style.css"])
+- scripts.add(["/scripts/script.js"])
+
+doctype 5
+html(lang="en")
+  head
+
+    // Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    // Icons
+    link(rel="shortcut icon", href="/ico/favicon.ico")
+    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/ico/144.png")
+    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/ico/114.png")
+    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/ico/72.png")
+    link(rel="apple-touch-icon-precomposed", href="/ico/67.png")
+
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    // Styles
+    != styles.toHTML()
+
+  body
+
+    section#content.content!= content
+    hr
+    footer
+      .container
+        p= site.copyright
+
+    // Scripts
+    script(type="text/javascript").
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-TRACKING-ID', 'PROPERTY URL');
+      ga('send', 'pageview');
+      
+    != scripts.toHTML()
