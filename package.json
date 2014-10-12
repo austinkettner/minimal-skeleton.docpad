@@ -1,19 +1,23 @@
 {
   "name": "minimal-skeleton.docpad",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "A really minimal skeleton for Docpad. Includes the essentials such as Jade and Stylus.",
   "homepage": "https://github.com/austinkettner/minimal-skeleton.docpad",
   "keywords": [
     "docpad-skeleton",
+    "jeet",
+    "axis-css",
     "docpad",
     "website"
   ],
-  "author": "Austin Kettner <email@austinkettner.com> (http://austinkettner.com)",
+  "author": [
+    "Austin Kettner <hello@austinkettner.com> (http://austinkettner.com)"
+  ],
   "maintainers": [
-    "Austin Kettner <email@austinkettner.com> (http://austinkettner.com)"
+    "Austin Kettner <hello@austinkettner.com> (http://austinkettner.com)"
   ],
   "contributors": [
-    "Austin Kettner <email@austinkettner.com> (http://austinkettner.com)"
+    "Austin Kettner <hello@austinkettner.com> (http://austinkettner.com)"
   ],
   "bugs": {
     "url": "https://github.com/austinkettner/minimal-skeleton.docpad/issues"
@@ -30,17 +34,18 @@
     "docpad": "6.x",
     "docpad-plugin-cleanurls": "2.x",
     "docpad-plugin-coffeescript": "2.x",
+    "docpad-plugin-cleanurls": "2.x",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-jade": "2.x",
-    "bower": "~1",
-    "jeet": "^5.2.10",
-    "roots": "^2.1.3"
+    "bower": "1.x",
+    "jeet": "6.x",
+    "roots": "0.x"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x",
-    "bower": "~1"
+    "bower": "1.x"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
