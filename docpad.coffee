@@ -117,7 +117,7 @@ docpadConfig =
     stylus:
       stylusLibraries:
         nib: true
-        roots: true
+        axis: true
         jeet: true
       stylusOptions:
         compress: true

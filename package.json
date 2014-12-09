@@ -1,6 +1,6 @@
 {
   "name": "minimal-skeleton.docpad",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A really minimal skeleton for Docpad. Includes the essentials such as Jade and Stylus.",
   "homepage": "https://github.com/austinkettner/minimal-skeleton.docpad",
   "keywords": [
@@ -27,8 +27,8 @@
     "url": "https://github.com/austinkettner/minimal-skeleton.docpad"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.10.x",
+    "npm": "1.x"
   },
   "dependencies": {
     "docpad": "6.x",
@@ -39,9 +39,10 @@
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-jade": "2.x",
-    "bower": "1.x",
+    "docpad-plugin-eco": "2.x",
     "jeet": "6.x",
-    "roots": "0.x"
+    "axis": "0.x",
+    "rupture": "0.x"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x",
