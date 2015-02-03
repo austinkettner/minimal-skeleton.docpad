@@ -5,7 +5,7 @@
 - scripts.add(["//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"])
 
 //- Other Scripts
-- scripts.add(["/vendor/modernizr.js","/vendor/log.js"])
+- scripts.add(["/vendor/modernizr.js","/vendor/log.js","/vendor/viewport-units-buggyfill.js"])
 
 //- User
 - styles.add(["/styles/style.css"])
@@ -52,8 +52,8 @@ html(lang="en")
 
   body
 
-    section#content.content!= content
-    hr
+    section#content!= content
+    
     footer
       .container
         p= site.copyright

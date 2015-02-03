@@ -9,23 +9,16 @@ base()
 
 // Font Mixin
 font-size(n)
-font-size n * 1px
-font-size n * 1rem
+  font-size n * 1px
+  font-size n * 1rem
+  line-height n * 1px
+  line-height n * 1rem
 
 a, a:link
   cursor pointer
 
+html
+  font-size 1px
 body
   background white
   font-family 'Open-Sans', sans-serif
-
-table
-  tfoot, tbody
-    th
-      border-top 1px solid #DDD
-a
-  color nephritis
-
-footer
-  padding-bottom 30px
-  text-align center

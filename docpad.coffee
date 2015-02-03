@@ -119,6 +119,7 @@ docpadConfig =
         nib: true
         axis: true
         jeet: true
+        rupture: true
       stylusOptions:
         compress: true
 

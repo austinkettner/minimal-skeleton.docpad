@@ -31,17 +31,16 @@
     "npm": "1.x"
   },
   "dependencies": {
-    "docpad": "6.x",
-    "docpad-plugin-cleanurls": "2.x",
+    "axis": "0.x",
+    "docpad": "~6.69.2",
+    "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-coffeescript": "2.x",
-    "docpad-plugin-cleanurls": "2.x",
+    "docpad-plugin-eco": "2.x",
+    "docpad-plugin-jade": "2.x",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-stylus": "2.x",
-    "docpad-plugin-jade": "2.x",
-    "docpad-plugin-eco": "2.x",
     "jeet": "6.x",
-    "axis": "0.x",
     "rupture": "0.x"
   },
   "devDependencies": {
